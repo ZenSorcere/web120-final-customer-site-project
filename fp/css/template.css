@@ -1,0 +1,178 @@
+                /* FINAL PROJECT - WEB120 TEMPLATE CSS*/
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    color: white;
+                    box-sizing: border-box;
+                }
+                
+                html,
+                body {
+                    background-color: darkgray;
+                    /* font-family: 'Exo 2', sans-serif; */
+                    font-family: 'Arimo', sans-serif;
+                }
+                
+                main.wrapper,
+                footer {
+                    width: 90%;
+                    margin: auto;
+                    overflow: auto;
+                    background-color: rgb(26, 22, 22);
+                }
+                
+                section {
+                    padding-left: 2.5%;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                
+                header {
+                    margin: auto;
+                    background: black;
+                    text-align: center;
+                    line-height: 200px;
+                    /* min-height: 50px; */
+                    padding: 5%;
+                }
+                
+                header h1 {
+                    text-align: center;
+                    display: inline-block;
+                    font-family: 'Engagement', cursive;
+                    font-size: 5em;
+                    line-height: 200px;
+                }
+                
+                h1>a {
+                    text-decoration: none;
+                    color: green;
+                }
+                
+                img.logo {
+                    /* margin-left: 1%; */
+                    margin: 2em;
+                    width: 25%;
+                    max-width: 100%;
+                    border-radius: 50%;
+                    float: left;
+                    object-fit: contain;
+                    vertical-align: middle;
+                }
+                
+                h1,
+                h2,
+                h3,
+                h5,
+                h6 {
+                    font-weight: normal;
+                    padding: .5em;
+                }
+                
+                h3 {
+                    font-weight: 600;
+                    padding: .5em;
+                }
+                
+                h4 {
+                    font-weight: 600;
+                    padding: .5em 0em 0em .5em;
+                }
+                
+                p {
+                    margin: 1em .8em;
+                }
+                
+                .important {
+                    background: darkslategrey;
+                    padding: .5em;
+                }
+                
+                footer {
+                    text-align: center;
+                    text-transform: uppercase;
+                    clear: both;
+                }
+                
+                footer p {
+                    padding: 2em;
+                }
+                
+                footer a {
+                    color: mediumblue;
+                    text-decoration: none;
+                }
+                
+                footer a:hover {
+                    color: white;
+                    background-color: mediumblue;
+                }
+                /* BEGIN MEDIA QUERIES */
+                /* to avoid exceptionally large screen oddities */
+                
+                @media all and (max-width:1400px) {
+                    main.wrapper,
+                    footer {
+                        width: 100%;
+                    }
+                    section {
+                        width: 90%;
+                        display: block;
+                        float: none;
+                        margin: 0 auto;
+                    }
+                }
+                /* Tablet setting fixes */
+                
+                @media all and (max-width:910px) {
+                    header h1 {
+                        display: inline-block;
+                        font-size: 4em;
+                        line-height: 50px;
+                    }
+                    img.logo {
+                        /* margin-left: 1%; */
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 20%;
+                        max-width: 50%;
+                        border-radius: 50%;
+                        clear: both;
+                    }
+                }
+                /* Wider PHONE Settings */
+                
+                @media all and (max-width:800px) {
+                    div.wrapper {
+                        background-color: blue;
+                    }
+                    header:before {
+                        height: 40px;
+                        line-height: 40px;
+                        vertical-align: middle;
+                    }
+                    header h1 {
+                        text-align: center;
+                        font-size: 4em;
+                    }
+                    section {
+                        width: 95%;
+                    }
+                    img.logo {
+                        margin: 0 auto;
+                        width: 15%;
+                        display: none;
+                    }
+                    header {
+                        background: url("../images/owl.jpg") no-repeat;
+                        /* center center fixed */
+                        /* -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover; */
+                        background-size: cover;
+                        position: relative;
+                        max-height: 80%;
+                        width: 80%;
+                    }
+                }
